@@ -1,0 +1,23 @@
+/* Desktop First */
+/* 1024px - 1280px+ */
+.page__section {
+  max-width: 1280px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 200px 0 200px;
+  background-color: #000000;
+}
+
+/* 768px - 1023px */
+/*@media screen and (max-width: 1023px) {
+  .page__section {
+    padding: 88px 24px 0 24px;
+  }
+}*/
+
+/* 320px - 767px */
+/*@media screen and (max-width: 767px) {
+  .page__section {
+    padding: 64px 16px 0 16px;
+  }
+}*/

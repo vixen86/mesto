@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Cервис 'Mesto': интерактивная страница, куда можно добавлять фотографии, удалять их и ставить лайки. Проект на Яндекс.Практикуме.">
+    <meta name="keywords" content="HTML5, CSS, JavaScript">
+    <meta name="author" content="Юлия Асмолова">
+    <link rel="stylesheet" href="pages/index.css" >
+    <title>Mesto</title>
+    <!--<link rel="icon" type="image/svg" href="#">-->
+  </head>
+
+  <body class="page">
+    <header class="header page__section">
+      <div class="header__logo"></div>
+      <div class="header__line"></div>
+    </header>
+
+    <main class="content">
+
+      <!--секция Profile-->
+      <section class="profile page__section">
+        <img
+          src="images/profile_image.jpg"
+          alt="Аватарка"
+          class="profile__avatar"
+        >
+        <div class="profile__info">
+          <h1 class="profile__info-title">Жак-Ив&nbsp;Кусто</h1>
+          <button type="button" title="Редактировать профиль" class="profile__info-edit-button link-blackout"></button>
+          <p class="profile__info-subtitle">Исследователь океана</p>
+        </div>
+        <button type="button" title="Добавить новую фотографию" class="profile__add-button link-blackout"></button>
+      </section>
+
+      <!--секция Elements-->
+      <section class="elements page__section" aria-label="Фото галерея">
+        <ul class="elements__items">
+          <li class="element">
+            <img
+            src="images/karachaevsk.jpg"
+            alt="Карачаевск"
+            class="element__image"
+            >
+              <h2 class="element__title">Карачаевск</h2>
+              <div class="element__icon"></div>
+          </li>
+          <li class="element">
+            <img
+            src="images/elbrus.png"
+            alt="Гора Эльбрус"
+            class="element__image"
+            >
+              <h2 class="element__title">Гора Эльбрус</h2>
+              <div class="element__icon"></div>
+          </li>
+          <li class="element">
+            <img
+            src="images/dombay.png"
+            alt="Домбай"
+            class="element__image"
+            >
+              <h2 class="element__title">Домбай</h2>
+              <div class="element__icon"></div>
+          </li>
+          <li class="element">
+            <img
+            src="images/elbrus2.png"
+            alt="Гора Эльбрус"
+            class="element__image"
+            >
+              <h2 class="element__title">Гора Эльбрус</h2>
+              <div class="element__icon"></div>
+          </li>
+          <li class="element">
+            <img
+            src="images/dombay2.png"
+            alt="Домбай"
+            class="element__image"
+            >
+              <h2 class="element__title">Домбай</h2>
+              <div class="element__icon"></div>
+          </li>
+          <li class="element">
+            <img
+            src="images/karachaevo-ch_.png"
+            alt="Карачаево-Черкесия"
+            class="element__image"
+            >
+              <h2 class="element__title">Карачаево-Ч...</h2>
+              <div class="element__icon"></div>
+          </li>
+        </ul>
+      </section>
+
+
+
+
+
+    <!--секция footer-->
+    <footer class="footer page__section">
+      <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
+    </footer>
+  </body>
+</html>

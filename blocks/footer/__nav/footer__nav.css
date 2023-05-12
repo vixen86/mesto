@@ -1,0 +1,7 @@
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}

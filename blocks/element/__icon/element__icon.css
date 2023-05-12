@@ -1,0 +1,11 @@
+.element__icon {
+  width: 22px;
+  height: 19px;
+  background-image: url('../../../images/element_group_heart.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+}

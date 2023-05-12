@@ -1,0 +1,30 @@
+/* Desktop First */
+/* 768px - 1280px+ */
+.header {
+  min-height: 74px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 45px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+
+/* 320px - 1279px */
+/*@media screen and (max-width: 1279px) {
+  .header {
+    padding-bottom: 48px;
+  }
+}*/
+
+/* 320px - 767px */
+@media screen and (max-width: 767px) {
+  .header {
+   min-height: 56px;
+   padding-top: 28px;
+   padding-bottom: 42px;
+  }
+}

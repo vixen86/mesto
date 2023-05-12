@@ -1,0 +1,18 @@
+/* Desktop First */
+/* 768px - 1280px+ */
+.header__logo {
+  width: 142px;
+  height: 33px;
+  background-image: url('../../../images/logo_mesto.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 320px - 767px */
+@media screen and (max-width: 767px) {
+  .header__logo {
+    width: 103.74px;
+    height: 44.4px;
+  }
+}

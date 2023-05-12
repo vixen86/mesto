@@ -1,0 +1,23 @@
+/* Desktop First */
+/* 1280px+ */
+.profile__info-subtitle {
+  max-width: 336px;
+  max-height: 18px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  margin: 0;
+  padding: 16px 0 0 0;
+}
+
+/* 320px - 1279px */
+/*@media screen and (max-width: 767px) {
+  .profile__info-subtitle {
+    max-width: 288px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 16px 0 0 0;
+  }
+}*/
