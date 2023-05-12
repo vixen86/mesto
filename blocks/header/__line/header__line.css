@@ -1,5 +1,5 @@
 /* Desktop First */
-/* 768px - 1280px+ */
+/* 1024px - 1280px+ */
 .header__line {
   width: 880px;
   height: 0px;
@@ -8,10 +8,11 @@
   padding: 41px 0 0 0;
 }
 
-/* 320px - 767px */
-@media screen and (max-width: 767px) {
+/* 320px - 1023px */
+@media screen and (max-width: 1023px) {
   .header__line {
-   width: 320px;
+    /* width: 320px на 320px */
+   width: calc((100vw - 320px) / (1024 - 320) * (880 - 320) + 320px);;
    padding-top: 31.6px;
   }
 }

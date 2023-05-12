@@ -1,6 +1,5 @@
 /* Desktop First */
-/* 1280px+ */
-/* 1024px - 1279px+ */
+/* 767px - 1280px+ */
 .profile {
   min-height: 120px;
   width: 100%;
@@ -12,12 +11,10 @@
   margin: 0 auto;
 }
 
-/* 320px - 1023px */
-/*@media screen and (max-width: 1023px) {
+/* 320px - 767px */
+@media screen and (max-width: 767px) {
   .profile {
     flex-direction: column;
     align-items: center;
-    padding-left: 0;
-    padding-right: 0;
   }
-}*/
+}

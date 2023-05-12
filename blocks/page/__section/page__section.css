@@ -1,5 +1,5 @@
 /* Desktop First */
-/* 1024px - 1280px+ */
+/* 1280px+ */
 .page__section {
   max-width: 1280px;
   box-sizing: border-box;
@@ -8,16 +8,23 @@
   background-color: #000000;
 }
 
-/* 768px - 1023px */
-/*@media screen and (max-width: 1023px) {
+/* 1024px - 1279px */
+@media screen and (max-width: 1279px) {
   .page__section {
-    padding: 88px 24px 0 24px;
+    padding: 0 100px 0 100px;
   }
-}*/
+}
+
+/* 768px - 1023px */
+@media screen and (max-width: 1023px) {
+  .page__section {
+    padding: 0 50px 0 50px;
+  }
+}
 
 /* 320px - 767px */
-/*@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .page__section {
-    padding: 64px 16px 0 16px;
+    padding: 0 19px 0 19px;
   }
-}*/
+}

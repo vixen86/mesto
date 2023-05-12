@@ -8,6 +8,6 @@
 }
 
 /* временные границы для верстки*/
-div, section, table, footer, h1, h2, h3, h4, p, a, img, ul, li, iframe {
+div, section, table, footer, header, main, h1, h2, h3, h4, p, a, img, ul, li, iframe, button {
   outline: 1px solid #f00;
 }

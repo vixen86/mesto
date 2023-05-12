@@ -14,24 +14,28 @@
 
   <body class="page">
     <header class="header page__section">
-      <div class="header__logo"></div>
-      <div class="header__line"></div>
+      <div class="header__block">
+        <div class="header__logo"></div>
+        <div class="header__line"></div>
+    </div>
     </header>
 
     <main class="content">
 
       <!--секция Profile-->
       <section class="profile page__section">
-        <img
+        <div class="profile__block">
+          <img
           src="images/profile_image.jpg"
           alt="Аватарка"
           class="profile__avatar"
-        >
-        <div class="profile__info">
-          <h1 class="profile__info-title">Жак-Ив&nbsp;Кусто</h1>
-          <button type="button" title="Редактировать профиль" class="profile__info-edit-button link-blackout"></button>
-          <p class="profile__info-subtitle">Исследователь океана</p>
+         >
+         <div class="profile__info">
+           <h1 class="profile__info-title">Жак-Ив&nbsp;Кусто</h1>
+           <button type="button" title="Редактировать профиль" class="profile__info-edit-button link-blackout"></button>
+           <p class="profile__info-subtitle">Исследователь океана</p>
         </div>
+      </div>
         <button type="button" title="Добавить новую фотографию" class="profile__add-button link-blackout"></button>
       </section>
 
@@ -94,10 +98,6 @@
           </li>
         </ul>
       </section>
-
-
-
-
 
     <!--секция footer-->
     <footer class="footer page__section">

@@ -1,5 +1,5 @@
 /* Desktop First */
-/* 1280px+ */
+/* - 1280px+ */
 .element {
   max-width: 282px;
   border-radius: 10px;
@@ -12,12 +12,3 @@
   padding: 0;
   position: relative;
 }
-
-/* 320px - 767px */
-/*@media screen and (max-width: 767px) {
-  .element {
-    min-width: 288px;
-    font-size: 32px;
-    line-height: 35px;
-  }
-}*/

@@ -1,5 +1,5 @@
 /* Desktop First */
-/* 1280px+ */
+/* - 1280px+ */
 .element__image {
   max-width: 282px;
   background-color: #C4C4C4;
@@ -9,25 +9,4 @@
   object-position: center center;
   margin: 0;
   padding: 0;
-}
-
-/* 1024px - 1279px */
-@media screen and (max-width: 1279px) {
-  .element__image {
-    max-width: 300px;
-  }
-}
-
-/* 768px - 1023px */
-@media screen and (max-width: 1023px) {
-  .element__image {
-    max-width: 352px;
-  }
-}
-
-/* 320px - 767px */
-@media screen and (max-width: 767px) {
-  .element__image {
-    max-width: 288px;
-  }
 }
