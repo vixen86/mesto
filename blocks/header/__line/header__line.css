@@ -12,7 +12,7 @@
 @media screen and (max-width: 1023px) {
   .header__line {
     /* width: 320px на 320px */
-   width: calc((100vw - 320px) / (1024 - 320) * (880 - 320) + 320px);;
-   padding-top: 31.6px;
+    width: calc((100vw - 320px) / (1024 - 320) * (880 - 320) + 320px);
+    padding-top: 31.6px;
   }
 }
