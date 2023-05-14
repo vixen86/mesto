@@ -11,6 +11,9 @@
   margin: 0;
   padding: 25px 0 32px 21px;
   align-self: flex-start;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; /* Замещает текст, не уместившийся в блок, с помощью многоточия. */
 }
 
 /* 320px - 767px */

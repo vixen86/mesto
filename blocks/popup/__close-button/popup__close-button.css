@@ -1,0 +1,28 @@
+/* Desktop First */
+/* 767px - 1280px+ */
+.popup__close-button {
+  width: 32px;
+  height: 32px;
+  background-image: url('../../../images/close_button.svg');
+  background-color: transparent;
+  background-size: 32px 32px; /* width x height */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* 320px - 767px */
+@media screen and (max-width: 767px) {
+  .popup__close-button {
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+    top: -36px;
+    right: 0px;
+  }
+}

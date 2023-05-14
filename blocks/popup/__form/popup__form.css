@@ -1,0 +1,24 @@
+/* Desktop First */
+/* 767px - 1280px+ */
+.popup__form {
+  width: 100vw;
+  max-width: 430px;
+  color: #000000;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 34px 36px 37px 36px;
+  gap: 48px;
+}
+
+/* 320px - 767px */
+@media screen and (max-width: 767px) {
+  .popup__form {
+    /*max-width: 282px на 320px */
+    max-width: calc((100vw - 320px) / (768 - 320) * (430 - 282) + 282px);
+    padding: 25px 22px 25px 22px;
+    gap: 45px;
+  }
+}

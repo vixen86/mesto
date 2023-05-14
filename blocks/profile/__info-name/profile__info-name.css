@@ -1,6 +1,7 @@
 /* Desktop First */
 /* 768px - 1280px+ */
-.profile__info-title {
+.profile__info-name {
+  width: 87.5%;
   max-height: 39px;
   font-size: 42px;
   line-height: 48px;
@@ -8,18 +9,23 @@
   font-style: normal;
   text-align: left;
   margin: 0;
-  padding: 0 18px 0 0;
+  /*padding: 0 18px 0 0;*/
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /* 320px - 767px */
 @media screen and (max-width: 767px) {
-  .profile__info-title {
+  .profile__info-name {
+    width: 100% / 1.5;
     /* max-height: 26px на 320px */
     max-height: calc((100vw - 320px) / (768 - 320) * (39 - 26) + 26px);
     /* font-size: 27px на 320px */
     font-size: calc((100vw - 320px) / (768 - 320) * (42 - 27) + 27px);
     /* line-height: 33px на 320px */
     line-height: calc((100vw - 320px) / (768 - 320) * (48 - 33) + 33px);
-    padding-right: 10px;
+    /*padding-right: 10px;*/
+    text-align: center;
   }
 }
