@@ -1,16 +1,16 @@
-const openPopupButton =
+let openPopupButton =
   document.querySelector("#open-popup-button"); /* ищем id */
-const closePopupButton = document.querySelector("#close-popup-button");
-const editPopup = document.querySelector("#edit-popup");
+let closePopupButton = document.querySelector("#close-popup-button");
+let editPopup = document.querySelector("#edit-popup");
 
-const profileInfoName = document.querySelector(
+let profileInfoName = document.querySelector(
   ".profile__info-name"
 ); /* ищем class */
-const inputName = document.querySelector("#input-name");
-const profileInfoAbout = document.querySelector(".profile__info-about");
-const inputAbout = document.querySelector("#input-about");
+let inputName = document.querySelector("#input-name");
+let profileInfoAbout = document.querySelector(".profile__info-about");
+let inputAbout = document.querySelector("#input-about");
 
-const editForm = document.querySelector("#edit-form");
+let editForm = document.querySelector("#edit-form");
 
 /* функция открытия любого попапа */
 function openPopup(popup) {

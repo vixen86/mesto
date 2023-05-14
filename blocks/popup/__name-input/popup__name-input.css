@@ -11,6 +11,7 @@
   border-color: rgba(0, 0, 0, 0.2);
   margin: 0;
   padding: 30px 0 13px 0;
+  outline: none; /* убираем рамку в input при вводе текста */
 }
 
 .popup__name-input:first-child {
