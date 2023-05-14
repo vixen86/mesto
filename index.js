@@ -12,21 +12,25 @@ const inputAbout = document.querySelector("#input-about");
 
 const editForm = document.querySelector("#edit-form");
 
-/* функция открытия попапа */
-function openPopup() {
-  editPopup.classList.add("popup_opened");
+/* функция открытия любого попапа */
+function openPopup(popup) {
+  popup.classList.add("popup_opened");
 }
 
 /* callback - открываем попап по клику */
-openPopupButton.addEventListener("click", openPopup);
+openPopupButton.addEventListener("click", function() {
+  openPopup(editPopup);
+});
 
-/* функция закрытия попапа */
-function closePopup() {
-  editPopup.classList.remove("popup_opened");
+/* функция закрытия любого попапа */
+function closePopup(popup) {
+  popup.classList.remove("popup_opened");
 }
 
 /* закрываем попап по кнопке close */
-closePopupButton.addEventListener("click", closePopup);
+closePopupButton.addEventListener("click", function() {
+  closePopup(editPopup);
+});
 
 /* стартовое значение полей инпут из профиля */
 inputName.value = profileInfoName.textContent;
