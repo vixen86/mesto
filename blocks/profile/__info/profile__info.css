@@ -4,11 +4,8 @@
   width: 336px;
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  /*flex-direction: row;
-  flex-wrap: wrap;*/
-  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /* 320px - 767px */
@@ -17,6 +14,6 @@
     /* max-width: 282px на 320px */
     width: calc((100vw - 320px) / (768 - 320) * (336 - 282) + 282px);
     /*justify-content: center;*/
-    align-items: center;
+    justify-content: center;
   }
 }

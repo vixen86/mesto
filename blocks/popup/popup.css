@@ -1,4 +1,7 @@
+/* Desktop First */
+/* 767px - 1280px+ */
 .popup {
+  width: 100%;
   display: none;
   align-items: center;
   justify-content: center;
@@ -8,4 +11,12 @@
   left: 0;
   right: 0;
   bottom: 0;
+  padding: 195px 0 0 0;
+}
+
+/* 320px - 767px */
+@media screen and (max-width: 767px) {
+  .popup {
+    padding-top: 123px;
+  }
 }

@@ -1,7 +1,6 @@
 /* Desktop First */
 /* 768px - 1280px+ */
 .footer__copyright {
-  max-height: 18px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 400;
@@ -15,8 +14,6 @@
 /* 320px - 767px */
 @media screen and (max-width: 767px) {
   .footer__copyright {
-    /* max-height: 14px; */
-    max-height: calc((100vw - 320px) / (768 - 320) * (18 - 14) + 14px);
     /* font-size: 14px; */
     font-size: calc((100vw - 320px) / (768 - 320) * (18 - 14) + 14px);
     /* line-height: 17px; */

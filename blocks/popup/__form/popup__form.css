@@ -1,7 +1,7 @@
 /* Desktop First */
 /* 767px - 1280px+ */
 .popup__form {
-  width: 100vw;
+  width: 100%;
   max-width: 430px;
   color: #000000;
   box-sizing: border-box;
@@ -22,3 +22,4 @@
     gap: 45px;
   }
 }
+

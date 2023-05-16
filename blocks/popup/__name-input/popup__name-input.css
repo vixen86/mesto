@@ -1,27 +1,19 @@
 .popup__name-input {
-  width: 358px;
+  width: 100%;
+  /*width: 358px;*/
   color: #000000;
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
   font-style: normal;
   box-sizing: border-box;
-  border: 0;
-  border-bottom: 1px solid;
-  border-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin: 0;
-  padding: 30px 0 13px 0;
+  padding: 30px 0 9px 0;
   outline: none; /* убираем рамку в input при вводе текста */
 }
 
 .popup__name-input:first-child {
   padding-top: 0;
-}
-
-/* 320px - 767px */
-@media screen and (max-width: 767px) {
-  .popup__name-input {
-   /* width: 238px на 320px */
-   width: calc((100vw - 320px) / (768 - 320) * (358 - 238) + 238px);
-  }
 }
