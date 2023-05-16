@@ -23,7 +23,7 @@
     /* line-height: 33px на 320px */
     line-height: calc((100vw - 320px) / (768 - 320) * (48 - 33) + 33px);
     padding-right: 10px;
-    padding-bottom: 14px;
+    padding-bottom: 10px;
     text-align: center;
   }
 }

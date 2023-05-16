@@ -17,3 +17,7 @@
 .popup__name-input:first-child {
   padding-top: 0;
 }
+
+.popup__name-input:nth-child(2) {
+  margin-bottom: 48px;
+}

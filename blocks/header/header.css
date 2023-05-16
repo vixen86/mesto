@@ -1,21 +1,33 @@
 /* Desktop First */
 /* 768px - 1280px+ */
 .header {
-  min-height: 74px;
   width: 100%;
+  min-height: 74px;
+  border-bottom: 1px solid rgb(84,84,84,0.7);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 45px;
-  padding-bottom: 40px;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 39px;
+}
+
+/* 320px - 1280px */
+@media screen and (max-width: 1280px) {
+  .header {
+    max-width: calc((100vw - 320px) / (1280 - 320) * (880 - 320) + 320px);
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 /* 320px - 767px */
 @media screen and (max-width: 767px) {
   .header {
    min-height: 56px;
-   padding: 28px 0 42px 0;
+   padding: 28px 0 31px 0;
   }
 }
+

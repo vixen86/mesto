@@ -1,19 +1,22 @@
 let openPopupButton =
-  document.querySelector("#open-popup-button"); /* ищем id */
-let closePopupButton = document.querySelector("#close-popup-button");
-let editPopup = document.querySelector("#edit-popup");
+  document.querySelector(".profile__info-edit-button");
+let closePopupButton = document.querySelector(".popup__close-button");
+let editPopup = document.querySelector(".popup");
 
 let profileInfoName = document.querySelector(
   ".profile__info-name"
 ); /* ищем class */
-let inputName = document.querySelector("#input-name");
+let inputName = document.querySelector("#input-name"); /* ищем id */
 let profileInfoAbout = document.querySelector(".profile__info-about");
 let inputAbout = document.querySelector("#input-about");
 
-let editForm = document.querySelector("#edit-form");
+let editForm = document.querySelector(".popup__form");
 
 /* функция открытия любого попапа */
 function openPopup(popup) {
+  /* стартовое значение полей инпут из профиля */
+  inputName.value = profileInfoName.textContent;
+  inputAbout.value = profileInfoAbout.textContent;
   popup.classList.add("popup_opened");
 }
 
@@ -32,9 +35,6 @@ closePopupButton.addEventListener("click", function() {
   closePopup(editPopup);
 });
 
-/* стартовое значение полей инпут из профиля */
-inputName.value = profileInfoName.textContent;
-inputAbout.value = profileInfoAbout.textContent;
 
 /* перезаписываем данные в профиле */
 editForm.addEventListener("submit", function (event) {

@@ -14,10 +14,7 @@
 
   <body class="page">
     <header class="header page__section">
-      <div class="header__block">
-        <div class="header__logo"></div>
-        <div class="header__line"></div>
-    </div>
+      <div class="header__logo"></div>
     </header>
 
     <main class="content">
@@ -32,7 +29,7 @@
          >
          <div class="profile__info">
            <h1 class="profile__info-name">Жак-Ив&nbsp;Кусто</h1>
-           <button id="open-popup-button" type="button" title="Редактировать профиль" class="profile__info-edit-button link-blackout"></button>
+           <button type="button" title="Редактировать профиль" class="profile__info-edit-button link-blackout"></button>
            <p class="profile__info-about">Исследователь океана</p>
         </div>
       </div>
@@ -50,7 +47,7 @@
             >
              <div class="element__block">
                <h2 class="element__title">Карачаевск</h2>
-               <div class="element__icon"></div>
+               <button type="button" title="Поставить лайк" class="element__like_button link-blackout"></button>
              </div>
 
           </li>
@@ -62,7 +59,7 @@
             >
               <div class="element__block">
                 <h2 class="element__title">Гора Эльбрус</h2>
-                <div class="element__icon"></div>
+                <button type="button" title="Поставить лайк" class="element__like_button link-blackout"></button>
               </div>
           </li>
           <li class="element">
@@ -73,7 +70,7 @@
             >
               <div class="element__block">
                 <h2 class="element__title">Домбай</h2>
-                <div class="element__icon"></div>
+                <button type="button" title="Поставить лайк" class="element__like_button link-blackout"></button>
               </div>
           </li>
           <li class="element">
@@ -84,7 +81,7 @@
             >
               <div class="element__block">
                 <h2 class="element__title">Гора Эльбрус</h2>
-                <div class="element__icon"></div>
+                <button type="button" title="Поставить лайк" class="element__like_button link-blackout"></button>
               </div>
           </li>
           <li class="element">
@@ -95,7 +92,7 @@
             >
               <div class="element__block">
                 <h2 class="element__title">Домбай</h2>
-                <div class="element__icon"></div>
+                <button type="button" title="Поставить лайк" class="element__like_button link-blackout"></button>
               </div>
           </li>
           <li class="element">
@@ -106,7 +103,7 @@
             >
               <div class="element__block">
                 <h2 class="element__title">Карачаево-Черкессия</h2>
-                <div class="element__icon"></div>
+                <button type="button" title="Поставить лайк" class="element__like_button link-blackout"></button>
               </div>
           </li>
         </ul>
@@ -119,20 +116,16 @@
     </footer>
 
     <!--попап Редактировать профиль-->
-    <div id="edit-popup" class="popup">
+    <div class="popup">
       <div class="popup__container">
-        <form id="edit-form" class="popup__form" novalidate>
-          <h2 class="popup__title">Редактировать профиль</h2>
-
-          <fieldset class="popup__fieldset">
-           <input id="input-name" type="text" class="popup__name-input">
-           <input id="input-about" type="text" class="popup__name-input">
-          </fieldset>
-
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <form name="editForm" class="popup__form" novalidate>
+          <input id="input-name" name="inputName" placeholder="Имя" type="text" class="popup__name-input">
+          <input id="input-about" name="inputAbout" placeholder="О себе" type="text" class="popup__name-input">
           <!-- кнопка работает и по Enter -->
           <button type="submit" title="Сохранить" class="popup__button">Сохранить</button>
         </form>
-        <button id="close-popup-button" type="button" title="Закрыть" class="popup__close-button link-blackout"></button>
+        <button type="button" title="Закрыть" class="popup__close-button link-blackout"></button>
       </div>
     </div>
 
