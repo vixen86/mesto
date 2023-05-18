@@ -19,7 +19,7 @@
   .profile__info-about {
     /* font-size: 14px на 320px */
     font-size: calc((100vw - 320px) / (768 - 320) * (18 - 14) + 14px);
-    /* line-height: 17px на 320px */
+    /*line-height: 17px на 320px */
     line-height: calc((100vw - 320px) / (768 - 320) * (22 - 17) + 17px);
     text-align: center;
     padding-bottom: 32px;

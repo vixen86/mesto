@@ -11,7 +11,26 @@
 /* 1024px - 1279px */
 @media screen and (max-width: 1279px) {
   .page__section {
-    padding-left: calc((100vw - 320px) / (1280 - 320) * (200 - 19) + 19px);
-    padding-right: calc((100vw - 320px) / (1280 - 320) * (200 - 19) + 19px);
+    padding-left: calc((100vw - 1024px) / (1280 - 1024) * (200 - 72) + 72px);
+    padding-right: calc((100vw - 1024px) / (1280 - 1024) * (200 - 72) + 72px);
   }
 }
+
+/* 826px - 1023px */
+@media screen and (max-width: 1023px) {
+  .page__section {
+    padding-left: 93.5px;
+    padding-right: 93.5px;
+  }
+}
+
+/* 320px - 825px */
+@media screen and (max-width: 825px) {
+  .page__section {
+    padding-left: calc((100vw - 320px) / (768 - 320) * (93.5 - 19) + 19px);
+    padding-right: calc((100vw - 320px) / (768 - 320) * (93.5 - 19) + 19px);
+  }
+}
+
+
+

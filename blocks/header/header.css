@@ -1,5 +1,5 @@
 /* Desktop First */
-/* 768px - 1280px+ */
+/* 456px - 1280px+ */
 .header {
   width: 100%;
   min-height: 74px;
@@ -8,9 +8,10 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 46px;
 }
 
+/* 1024px - 1280px+ */
 .header::after {
   content: '';
   width: 880px;
@@ -18,11 +19,11 @@
   padding-bottom: 39px;
 }
 
-/* 320px - 1279px */
-@media screen and (max-width: 1279px) {
+/* 320px - 1023px */
+@media screen and (max-width: 1023px) {
   .header::after {
     /* width: 320px на 320px */
-    width: calc((100vw - 320px) / (1280 - 320) * (880 - 320) + 320px);
+    width: calc((100vw - 320px) / (1024 - 320) * (880 - 320) + 320px);
     padding-bottom: 31.6px;
   }
 }

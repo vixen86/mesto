@@ -1,3 +1,5 @@
+/* Desktop First */
+/* 768px - 1280px+ */
 .popup__name-input {
   width: 100%;
   color: #000000;
@@ -19,4 +21,11 @@
 
 .popup__name-input:nth-child(2) {
   margin-bottom: 48px;
+}
+
+/* 320px - 767px */
+@media screen and (max-width: 767px) {
+  .popup__name-input:nth-child(2) {
+    margin-bottom: 46px;
+  }
 }
