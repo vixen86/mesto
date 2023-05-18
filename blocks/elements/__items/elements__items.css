@@ -1,5 +1,5 @@
 /* Desktop First */
-/* 1280px+ */
+/* 1024px - 1280px+ */
 .elements__items {
   display: grid;
   box-sizing: border-box;

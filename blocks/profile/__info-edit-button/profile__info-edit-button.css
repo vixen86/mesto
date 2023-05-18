@@ -1,5 +1,5 @@
 /* Desktop First */
-/* 767px - 1280px+ */
+/* 768px - 1280px+ */
 .profile__info-edit-button {
   width: 24px;
   height: 24px;
@@ -20,9 +20,5 @@
     width: 18px;
     height: 18px;
     background-size: 7.5px 7.5px;
-    /*top: 8px;*/
-    top: calc((100vw - 320px) / (768 - 320) * (15 - 8) + 8px);
-    /*right: 19px;*/
-    right: calc((100vw - 320px) / (768 - 320) * (0 - 19) + 19px);
   }
 }

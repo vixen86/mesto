@@ -1,5 +1,5 @@
 /* Desktop First */
-/* 768px - 1280px+ */
+/*  - 1280px+ */
 .element__title {
   max-width: 199px;
   font-size: 24px;
@@ -11,5 +11,5 @@
   padding: 0;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis; /* Замещает текст, не уместившийся в блок, с помощью многоточия. */
+  text-overflow: ellipsis; /* Замещаем текст, не уместившийся в блок, с помощью многоточия. */
 }

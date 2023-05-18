@@ -3,31 +3,35 @@
 .header {
   width: 100%;
   min-height: 74px;
-  border-bottom: 1px solid rgb(84,84,84,0.7);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   margin: 0 auto;
   padding-top: 40px;
+}
+
+.header::after {
+  content: '';
+  width: 880px;
+  border-bottom: 1px solid rgba(84,84,84,0.7);
   padding-bottom: 39px;
 }
 
-/* 320px - 1280px */
-@media screen and (max-width: 1280px) {
-  .header {
-    max-width: calc((100vw - 320px) / (1280 - 320) * (880 - 320) + 320px);
-    padding-left: 0;
-    padding-right: 0;
+/* 320px - 1279px */
+@media screen and (max-width: 1279px) {
+  .header::after {
+    /* width: 320px на 320px */
+    width: calc((100vw - 320px) / (1280 - 320) * (880 - 320) + 320px);
+    padding-bottom: 31.6px;
   }
 }
 
-/* 320px - 767px */
-@media screen and (max-width: 767px) {
+/* 320px - 455px */
+@media screen and (max-width: 455px) {
   .header {
    min-height: 56px;
-   padding: 28px 0 31px 0;
+   padding-top: 28px;
   }
 }
 

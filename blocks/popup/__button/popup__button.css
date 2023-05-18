@@ -2,7 +2,6 @@
 /* 767px - 1280px+ */
 .popup__button {
   width: 100%;
-  max-height: 50px;
   color: #FFFFFF;
   font-size: 18px;
   line-height: 22px;
@@ -13,7 +12,7 @@
   box-sizing: border-box;
   border-radius: 2px;
   border: 0;
-  padding: 14px 124px 18px 125px;
+  padding: 14px 124px 14px 125px;
   transition: opacity 0.5s ease;
   align-self: center;
 }
@@ -31,8 +30,6 @@
 /* 320px - 767px */
 @media screen and (max-width: 767px) {
   .popup__button {
-    /*max-height: 46px на 320px*/
-    max-height: calc((100vw - 320px) / (768 - 320) * (50 - 46) + 46px);
     /*font-size: 14px на 320px */
     font-size: calc((100vw - 320px) / (768 - 320) * (18 - 14) + 14px);
     /*line-height: 17px на 320px */

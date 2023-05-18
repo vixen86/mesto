@@ -1,5 +1,5 @@
 /* Desktop First */
-/* 767px - 1280px+ */
+/* 768px - 1280px+ */
 .profile__info {
   width: 336px;
   box-sizing: border-box;
@@ -13,7 +13,6 @@
   .profile__info {
     /* max-width: 282px на 320px */
     width: calc((100vw - 320px) / (768 - 320) * (336 - 282) + 282px);
-    /*justify-content: center;*/
     justify-content: center;
   }
 }
