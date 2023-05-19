@@ -1,5 +1,3 @@
-/* Desktop First */
-/* 768px - 1280px+ */
 .profile__add-button {
  width: 150px;
  height: 50px;
@@ -7,15 +5,14 @@
  border-radius: 2px;
  background-image: url('../../../images/add_button.svg');
  background-color: transparent;
- background-size: 22px 22px; /* width x height */
+ background-size: 22px 22px;
  background-position: center;
  background-repeat: no-repeat;
  margin: 0;
  padding: 0;
 }
 
-/* 320px - 767px */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .profile__add-button {
     width: 282px;
     background-size: 16px 16px;

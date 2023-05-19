@@ -1,12 +1,10 @@
-/* Desktop First */
-/* 768px - 1280px+ */
 .profile__info-edit-button {
   width: 24px;
   height: 24px;
   border: 1px solid #FFFFFF;
   background-image: url('../../../images/edit_button.svg');
   background-color: transparent;
-  background-size: 10px 10px; /* width x height */
+  background-size: 10px 10px;
   background-position: center;
   background-repeat: no-repeat;
   align-self: center;
@@ -14,7 +12,6 @@
   padding: 0;
 }
 
-/* 320px - 767px */
 @media screen and (max-width: 767px) {
   .profile__info-edit-button {
     width: 18px;

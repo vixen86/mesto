@@ -1,5 +1,3 @@
-/* Desktop First */
-/* 456px - 1280px+ */
 .header {
   width: 100%;
   min-height: 74px;
@@ -11,7 +9,6 @@
   padding-top: 46px;
 }
 
-/* 1024px - 1280px+ */
 .header::after {
   content: '';
   width: 880px;
@@ -19,16 +16,13 @@
   padding-bottom: 39px;
 }
 
-/* 320px - 1023px */
 @media screen and (max-width: 1023px) {
   .header::after {
-    /* width: 320px на 320px */
     width: calc((100vw - 320px) / (1024 - 320) * (880 - 320) + 320px);
     padding-bottom: 31.6px;
   }
 }
 
-/* 320px - 455px */
 @media screen and (max-width: 455px) {
   .header {
    min-height: 56px;
