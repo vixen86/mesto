@@ -1,18 +1,18 @@
-/* Desktop First */
-/* 768px - 1280px+ */
 .profile__info {
-  width: 336px;
-  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  max-width: calc((100vw - 320px) / (1280 - 320) * (420 - 282) + 282px);
 }
 
-/* 320px - 767px */
+@media screen and (min-width: 1280px) {
+  .profile__info {
+    max-width: 420px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .profile__info {
-    /* max-width: 282px на 320px */
-    width: calc((100vw - 320px) / (768 - 320) * (336 - 282) + 282px);
     justify-content: center;
   }
 }

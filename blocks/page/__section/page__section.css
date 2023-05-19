@@ -24,8 +24,8 @@
   }
 }
 
-/* 320px - 825px */
-@media screen and (max-width: 825px) {
+/* 320px - 850px */
+@media screen and (max-width: 850px) {
   .page__section {
     padding-left: calc((100vw - 320px) / (768 - 320) * (93.5 - 19) + 19px);
     padding-right: calc((100vw - 320px) / (768 - 320) * (93.5 - 19) + 19px);
