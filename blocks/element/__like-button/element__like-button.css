@@ -12,7 +12,7 @@
   padding: 0;
 }
 
-.element__icon:hover {
+.element__like-button:hover {
   opacity: 0.5;
   cursor: pointer;
 }
