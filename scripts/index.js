@@ -34,7 +34,8 @@ editForm.addEventListener("submit", function (event) {
   closePopup(editPopup);
 });
 
-//////////////
+
+
 let addPopupButton = document.querySelector(".profile__add-button");
 let closeAddPopupButton = document.querySelector("#close-add-popup-button");
 let addPopup = document.querySelector("#add-popup");
@@ -56,7 +57,7 @@ closeAddPopupButton.addEventListener("click", function () {
   closePopup(addPopup);
 });
 
-////////////////////////
+
 
 const cardTemplate = document.querySelector("#card-template");
 const cardTemplateContent = cardTemplate.content;
@@ -113,6 +114,22 @@ function createNewCard(card) {
     event.target.classList.toggle("element__like-button_active", true);
   });
 
+
+  const popupImage = document.querySelector(".popup__image");
+  const popupCaption = document.querySelector(".popup__caption");
+  const openFigure = newCard.querySelector(".element__image");
+  const openFigurePopup = document.querySelector("#figure-popup");
+  const closeFigurePopupButton = document.querySelector("#close-figure-popup-button");
+  openFigure.addEventListener("click", function () {
+    popupImage.src = elementImage.src;
+    popupImage.alt = elementImage.alt;
+    popupCaption.textContent = elementTitle.textContent;
+    openFigurePopup.classList.add("popup_opened");
+  });
+  closeFigurePopupButton.addEventListener("click", function () {
+    closePopup(openFigurePopup);
+  });
+
   return newCard;
 }
 
@@ -129,3 +146,4 @@ editAddForm.addEventListener("submit", function (event) {
   /*form.reset();*/
   closePopup(addPopup);
 });
+
