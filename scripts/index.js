@@ -1,13 +1,13 @@
-let openPopupButton = document.querySelector(".profile__info-edit-button");
-let closePopupButton = document.querySelector("#close-popup-button");
-let editPopup = document.querySelector("#edit-popup");
+const openPopupButton = document.querySelector(".profile__info-edit-button");
+const closePopupButton = document.querySelector("#close-popup-button");
+const editPopup = document.querySelector("#edit-popup");
 
-let profileInfoName = document.querySelector(".profile__info-name");
-let inputName = document.querySelector("#input-name");
-let profileInfoAbout = document.querySelector(".profile__info-about");
-let inputAbout = document.querySelector("#input-about");
+const profileInfoName = document.querySelector(".profile__info-name");
+const inputName = document.querySelector("#input-name");
+const profileInfoAbout = document.querySelector(".profile__info-about");
+const inputAbout = document.querySelector("#input-about");
 
-let editForm = document.querySelector("#edit-popup-form");
+const editForm = document.querySelector("#edit-popup-form");
 
 function openPopup(popup) {
   inputName.value = profileInfoName.textContent;
@@ -36,12 +36,12 @@ editForm.addEventListener("submit", function (event) {
 
 
 
-let addPopupButton = document.querySelector(".profile__add-button");
-let closeAddPopupButton = document.querySelector("#close-add-popup-button");
-let addPopup = document.querySelector("#add-popup");
-let editAddForm = document.querySelector("#add-popup-form");
-let inputTitle = document.querySelector("#input-title");
-let inputLink = document.querySelector("#input-link");
+const addPopupButton = document.querySelector(".profile__add-button");
+const closeAddPopupButton = document.querySelector("#close-add-popup-button");
+const addPopup = document.querySelector("#add-popup");
+const editAddForm = document.querySelector("#add-popup-form");
+const inputTitle = document.querySelector("#input-title");
+const inputLink = document.querySelector("#input-link");
 
 function openAddPopup(popup) {
   popup.classList.add("popup_opened");
@@ -93,11 +93,11 @@ const initialCards = [
 
 initialCards.forEach(function (card) {
   const newCards = createNewCard(card);
-  cardElements.prepend(newCards); /* новый элемент добавляем в начало */
+  cardElements.prepend(newCards);
 });
 
 function createNewCard(card) {
-  const newCard = cardElement.cloneNode(true); /* true - глубокое клонирование*/
+  const newCard = cardElement.cloneNode(true);
   const elementTitle = newCard.querySelector(".element__title");
   elementTitle.textContent = card.name;
   const elementImage = newCard.querySelector(".element__image");
@@ -142,8 +142,7 @@ editAddForm.addEventListener("submit", function (event) {
   const link = values["inputLink"];
   const value = { name, link };
   const cards = createNewCard(value);
-  cardElements.prepend(cards); /* новый элемент добавляем в начало */
-  /*form.reset();*/
+  cardElements.prepend(cards);
   closePopup(addPopup);
 });
 
