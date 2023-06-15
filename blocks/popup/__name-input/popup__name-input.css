@@ -9,20 +9,6 @@
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin: 0;
-  padding: 30px 0 9px 0;
+  padding: 0 0 9px 0;
   outline: none;
-}
-
-.popup__name-input:first-child {
-  padding-top: 0;
-}
-
-.popup__name-input:nth-child(2) {
-  margin-bottom: 48px;
-}
-
-@media screen and (max-width: 767px) {
-  .popup__name-input:nth-child(2) {
-    margin-bottom: 46px;
-  }
 }
