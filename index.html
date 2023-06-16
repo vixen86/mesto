@@ -46,15 +46,15 @@
     <div id="edit-popup" class="popup">
       <div class="popup__container">
         <h2 class="popup__title">Редактировать профиль</h2>
-        <form id="edit-popup-form" name="editForm" autocomplete="off" class="popup__form" novalidate>
+        <form id="edit-popup-form" name="editForm" class="popup__form" novalidate>
           <label class="popup__label">
-            <input id="input-name" name="inputName" placeholder="Имя" type="text" minlength="2" maxlength="40" class="popup__name-input" required>
-            <span class="popup__input-error input-name-error">Вы пропустили это поле.</span>
+            <input id="input-name" name="inputName" placeholder="Имя" type="text" minlength="2" maxlength="40" class="popup__name-input" required autocomplete="off">
+            <span class="popup__input-error input-name-error"></span>
           </label>
 
           <label class="popup__label">
-            <input id="input-about" name="inputAbout" placeholder="О себе" type="text" minlength="2" maxlength="200" class="popup__name-input" required>
-            <span class="popup__input-error input-about-error">Вы пропустили это поле.</span>
+            <input id="input-about" name="inputAbout" placeholder="О себе" type="text" minlength="2" maxlength="200" class="popup__name-input" required autocomplete="off">
+            <span class="popup__input-error input-about-error"></span>
           </label>
 
           <button type="submit" title="Сохранить" class="popup__button popup__submit">Сохранить</button>
@@ -66,15 +66,15 @@
     <div id="add-popup" class="popup">
       <div class="popup__container">
         <h2 class="popup__title">Новое место</h2>
-        <form id="add-popup-form" name="editAddForm" autocomplete="off" class="popup__form" novalidate>
+        <form id="add-popup-form" name="editAddForm" class="popup__form" novalidate>
           <label class="popup__label">
-            <input id="input-title" name="inputTitle" placeholder="Название" type="text" value="" class="popup__name-input" required>
-            <span class="popup__input-error input-title-error">Вы пропустили это поле.</span>
+            <input id="input-title" name="inputTitle" placeholder="Название" type="text" value="" class="popup__name-input" required autocomplete="off">
+            <span class="popup__input-error input-title-error"></span>
           </label>
 
           <label class="popup__label">
-            <input id="input-link" name="inputLink" placeholder="Ссылка на картинку" type="url" value="" class="popup__name-input" required>
-            <span class="popup__input-error input-link-error">Введите адрес сайта.</span>
+            <input id="input-link" name="inputLink" placeholder="Ссылка на картинку" type="url" value="" class="popup__name-input" required autocomplete="off">
+            <span class="popup__input-error input-link-error"></span>
           </label>
 
           <button type="submit" title="Создать" class="popup__button popup__submit">Создать</button>
