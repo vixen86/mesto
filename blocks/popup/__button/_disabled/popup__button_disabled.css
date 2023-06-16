@@ -2,9 +2,6 @@
   background-color: #FFFFFF;
   color: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.2);
+ /*Кнопка не будет реагировать на нажатие указателем*/
+  pointer-events: none;
 }
-
-/*.popup__button_disabled:hover {
-  opacity: 1;
-  cursor: pointer;
-}*/

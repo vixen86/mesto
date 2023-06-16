@@ -57,7 +57,7 @@
             <span class="popup__input-error input-about-error"></span>
           </label>
 
-          <button type="submit" title="Сохранить" class="popup__button popup__submit">Сохранить</button>
+          <button type="submit" title="Сохранить" class="popup__button">Сохранить</button>
         </form>
         <button id="close-popup-button" type="button" title="Закрыть" class="popup__close-button link-blackout"></button>
       </div>
@@ -68,7 +68,7 @@
         <h2 class="popup__title">Новое место</h2>
         <form id="add-popup-form" name="editAddForm" class="popup__form" novalidate>
           <label class="popup__label">
-            <input id="input-title" name="inputTitle" placeholder="Название" type="text" value="" class="popup__name-input" required autocomplete="off">
+            <input id="input-title" name="inputTitle" placeholder="Название" type="text" minlength="2" maxlength="30" value="" class="popup__name-input" required autocomplete="off">
             <span class="popup__input-error input-title-error"></span>
           </label>
 
@@ -77,7 +77,7 @@
             <span class="popup__input-error input-link-error"></span>
           </label>
 
-          <button type="submit" title="Создать" class="popup__button popup__submit">Создать</button>
+          <button type="submit" title="Создать" class="popup__button">Создать</button>
         </form>
         <button id="close-add-popup-button" type="button" title="Закрыть" class="popup__close-button link-blackout"></button>
       </div>

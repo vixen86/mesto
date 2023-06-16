@@ -47,11 +47,32 @@ formInput.addEventListener('input', function () {
   checkInputValidity(form, formInput);
 });*/
 
+//Функция, которая обходит массив полей и отвечает на вопрос: «Есть ли здесь хотя бы одно поле, которое не прошло валидацию?».
+const hasInvalidInput = (inputList) => {
+  return inputList.some((inputElement) => {
+  return !inputElement.validity.valid;
+});
+};
+
+//Функциюя, которая отвечает за блокировку кнопки «Сохранить/Создать».
+const toggleButtonState = (inputList, buttonElement) => {
+  if (hasInvalidInput(inputList)) {
+    buttonElement.classList.add('popup__button_disabled');
+  } else {
+    buttonElement.classList.remove('popup__button_disabled');
+  }
+};
+
 const setEventListeners = (formElement) => {
   const inputList = Array.from(formElement.querySelectorAll('.popup__name-input'));
+  const buttonElement = formElement.querySelector('.popup__button');
+  // чтобы проверить состояние кнопки в самом начале
+  toggleButtonState(inputList, buttonElement);
   inputList.forEach((inputElement) => {
    inputElement.addEventListener('input', function () {
      checkInputValidity(formElement, inputElement);
+     // чтобы проверять его при изменении любого из полей
+     toggleButtonState(inputList, buttonElement);
    });
  });
 };
@@ -70,31 +91,6 @@ const enableValidation = (formElement) => {
 
 enableValidation();
 
-
-
-/*function validateInputName(value){
-  if (!value) {
-    return 'Введите имя пользователя';
-  }
-
-  if (value.length < 5) {
-    return 'Имя пользователя должно быть не меньше 5 символов';
-  }
-
-  return null;
-};
-
-function validateInputAbout{
-
-};
-
-function validateInputTitle{
-
-};
-
-function validateInputLink{
-
-};
 
 
 
