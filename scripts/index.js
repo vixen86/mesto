@@ -1,4 +1,6 @@
-const openEditPopupButton = document.querySelector(".profile__info-edit-button");
+const openEditPopupButton = document.querySelector(
+  ".profile__info-edit-button"
+);
 const closeEditPopupButton = document.querySelector("#close-popup-button");
 const editPopup = document.querySelector("#edit-popup");
 
@@ -11,12 +13,12 @@ const editForm = document.querySelector("#edit-popup-form");
 
 function openPopup(popup) {
   popup.classList.add("popup_opened");
+  document.addEventListener("keydown", closePopupButtonEsc);
 }
 
 function closePopup(popup) {
   popup.classList.remove("popup_opened");
 }
-
 
 openEditPopupButton.addEventListener("click", function () {
   inputName.value = profileInfoName.textContent;
@@ -35,15 +37,12 @@ editForm.addEventListener("submit", function (event) {
   closePopup(editPopup);
 });
 
-
-
 const openAddPopupButton = document.querySelector(".profile__add-button");
 const closeAddPopupButton = document.querySelector("#close-add-popup-button");
 const addPopup = document.querySelector("#add-popup");
 const editAddForm = document.querySelector("#add-popup-form");
 const inputTitle = document.querySelector("#input-title");
 const inputLink = document.querySelector("#input-link");
-
 
 openAddPopupButton.addEventListener("click", function () {
   editAddForm.reset();
@@ -54,8 +53,6 @@ closeAddPopupButton.addEventListener("click", function () {
   closePopup(addPopup);
 });
 
-
-
 const cardTemplate = document.querySelector("#card-template");
 const cardTemplateContent = cardTemplate.content;
 const cardElement = cardTemplateContent.querySelector(".element");
@@ -63,8 +60,9 @@ const cardBlock = document.querySelector(".elements__items");
 const popupImage = document.querySelector(".popup__image");
 const popupCaption = document.querySelector(".popup__caption");
 const openFigurePopup = document.querySelector("#figure-popup");
-const closeFigurePopupButton = document.querySelector("#close-figure-popup-button");
-
+const closeFigurePopupButton = document.querySelector(
+  "#close-figure-popup-button"
+);
 
 initialCards.forEach(function (card) {
   const newCards = createNewCard(card);
@@ -113,4 +111,14 @@ editAddForm.addEventListener("submit", function (event) {
   cardBlock.prepend(cards);
   closePopup(addPopup);
 });
+
+//Функция закрытия попапов по Esc
+const Popup = [editPopup, addPopup, openFigurePopup];
+function closePopupButtonEsc(evt) {
+  if (evt.key === "Escape") {
+    Popup.forEach(function (pop) {
+      closePopup(pop);
+    })
+  }
+};
 
