@@ -13,7 +13,8 @@ const editForm = document.querySelector("#edit-popup-form");
 
 function openPopup(popup) {
   popup.classList.add("popup_opened");
-  document.addEventListener("keydown", closePopupButtonEsc);
+  document.addEventListener("keydown", closePopupClickEsc);
+  document.addEventListener("click", closePopupClickOverlay);
 }
 
 function closePopup(popup) {
@@ -113,12 +114,20 @@ editAddForm.addEventListener("submit", function (event) {
 });
 
 //Функция закрытия попапов по Esc
-const Popup = [editPopup, addPopup, openFigurePopup];
-function closePopupButtonEsc(evt) {
+const Popups = document.querySelectorAll(".popup");
+function closePopupClickEsc(evt) {
   if (evt.key === "Escape") {
-    Popup.forEach(function (pop) {
+    Popups.forEach(function (pop) {
       closePopup(pop);
-    })
+    });
   }
-};
+}
 
+//Функция закрытия попапов по клику на оверлей
+function closePopupClickOverlay(evt) {
+  Popups.forEach(function (pop) {
+    if (evt.target === pop) {
+      closePopup(pop);
+    }
+  });
+}
