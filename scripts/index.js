@@ -113,7 +113,6 @@ editAddForm.addEventListener("submit", function (event) {
   closePopup(addPopup);
 });
 
-//Функция закрытия попапов по Esc
 const Popups = document.querySelectorAll(".popup");
 function closePopupClickEsc(evt) {
   if (evt.key === "Escape") {
@@ -123,7 +122,6 @@ function closePopupClickEsc(evt) {
   }
 }
 
-//Функция закрытия попапов по клику на оверлей
 function closePopupClickOverlay(evt) {
   Popups.forEach(function (pop) {
     if (evt.target === pop) {
