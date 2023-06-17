@@ -1,22 +1,13 @@
 .popup__input-error {
-  display: none;
+  min-height: 30px;
   color: #FF0000;
-  font-size: 11px;
-  line-height: 11px;
+  font-size: 12px;
+  line-height: 15px;
   font-style: normal;
   font-weight: 400;
   text-align: left;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  position: absolute;
-  top: calc(100% + 8px);
-  left: 0;
-}
-
-@media screen and (max-width: 767px) {
-  .popup__input-error {
-    font-size: calc((100vw - 320px) / (768 - 320) * (11 - 9) + 9px);
-    line-height: calc((100vw - 320px) / (768 - 320) * (11 - 9) + 9px);
-  }
+  visibility: hidden;
 }
