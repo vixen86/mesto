@@ -22,8 +22,8 @@ const showInputError = (
 const hideInputError = (formElement, inputElement, classNames) => {
   const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
   inputElement.classList.remove(classNames.inputErrorClass);
-  errorElement.classList.remove(classNames.errorClass);
   errorElement.textContent = "";
+  errorElement.classList.remove(classNames.errorClass);
 };
 
 const checkInputValidity = (formElement, inputElement, classNames) => {
@@ -62,7 +62,9 @@ const setEventListeners = (formElement, classNames) => {
   const buttonElement = formElement.querySelector(
     classNames.submitButtonSelector
   );
+
   toggleButtonState(inputList, buttonElement, classNames);
+
   inputList.forEach((inputElement) => {
     inputElement.addEventListener("input", function () {
       checkInputValidity(formElement, inputElement, classNames);
@@ -84,3 +86,7 @@ const enableValidation = (classNames) => {
 };
 
 enableValidation(classNames);
+
+
+
+
