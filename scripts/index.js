@@ -21,6 +21,7 @@ const inputLink = document.querySelector("#input-link");
 const cardTemplate = document.querySelector("#card-template");
 const cardTemplateContent = cardTemplate.content;
 const cardElement = cardTemplateContent.querySelector(".element");
+
 const cardBlock = document.querySelector(".elements__items");
 const popupImage = document.querySelector(".popup__image");
 const popupCaption = document.querySelector(".popup__caption");
@@ -31,18 +32,17 @@ const closeFigurePopupButton = document.querySelector(
 
 const popupList = document.querySelectorAll(".popup");
 
-const popupInputError = document.querySelectorAll('.popup__input-error');
-////
-const popupInputErrorBorder = document.querySelectorAll('.popup__name-input');
-////
+
 function openPopup(popup) {
   popup.classList.add("popup_opened");
   document.addEventListener("keydown", closePopupClickEsc);
+  document.addEventListener("click", closePopupClickOverlay);
 }
 
 function closePopup(popup) {
   popup.classList.remove("popup_opened");
   document.removeEventListener("keydown", closePopupClickEsc);
+  document.removeEventListener("click", closePopupClickOverlay);
 }
 
 
@@ -75,7 +75,6 @@ function createNewCard(card) {
     popupImage.alt = elementImage.alt;
     popupCaption.textContent = elementTitle.textContent;
     openPopup(openFigurePopup);
-    document.addEventListener("click", closePopupClickOverlay);
   });
 
   return newCard;
@@ -85,12 +84,10 @@ function createNewCard(card) {
 openEditPopupButton.addEventListener("click", function () {
   inputName.value = profileInfoName.textContent;
   inputAbout.value = profileInfoAbout.textContent;
-
-  clearSpanError(popupInputError);
-  clearSpanErrorBorder(popupInputErrorBorder);
-
   openPopup(editPopup);
-  document.addEventListener("click", closePopupClickOverlay);
+
+  hideInputError(editPopup, inputName, classNames);
+  hideInputError(editPopup, inputAbout, classNames);
 });
 
 closeEditPopupButton.addEventListener("click", function () {
@@ -107,12 +104,12 @@ editForm.addEventListener("submit", function (event) {
 
 openAddPopupButton.addEventListener("click", function () {
   editAddForm.reset();
-
-  clearSpanError(popupInputError);
-  clearSpanErrorBorder(popupInputErrorBorder);
-
   openPopup(addPopup);
-  document.addEventListener("click", closePopupClickOverlay);
+
+  hideInputError(addPopup, inputTitle, classNames);
+  hideInputError(addPopup, inputLink, classNames);
+
+  enableValidation(classNames);
 });
 
 closeAddPopupButton.addEventListener("click", function () {
@@ -151,18 +148,5 @@ function closePopupClickOverlay(evt) {
     }
   });
 }
-
-function clearSpanError (span) {
-  span.forEach(function (spanError){
-   spanError.classList.remove('popup__input-error_active');
-   spanError.textContent = "";
-  });
-};
-
-function clearSpanErrorBorder (input) {
-  input.forEach(function (spanError){
-    spanError.classList.remove('popup__name-input_type_error');
-  });
-};
 
 
