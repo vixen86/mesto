@@ -109,7 +109,8 @@ openAddPopupButton.addEventListener("click", function () {
   hideInputError(addPopup, inputTitle, classNames);
   hideInputError(addPopup, inputLink, classNames);
 
-  enableValidation(classNames);
+  const buttonElement = editAddForm.querySelector(".popup__button");
+  disableSubmitButton(buttonElement, classNames);
 });
 
 closeAddPopupButton.addEventListener("click", function () {
